@@ -89,7 +89,7 @@
     
     if (webBrowser.mode == TSMiniWebBrowserModeModal) {
         webBrowser.modalDismissButtonTitle = @"Home";
-        [self presentModalViewController:webBrowser animated:YES];
+        [self presentViewController:webBrowser animated:YES completion:nil];
     } else if(webBrowser.mode == TSMiniWebBrowserModeNavigation) {
         [self.navigationController pushViewController:webBrowser animated:YES];
     }
